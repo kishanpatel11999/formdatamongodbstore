@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="/stuff/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="/stuff/style.css">
+
+</head>
+
+<body>
+    <nav background="lightgrey">
+        <div class="nev">
+            <ul float="left">
+                <li>
+                    <h2><a href="/">Home</a></h2>
+                </li>
+                <li>
+                    <h2><a href="/donate">Donate</a></h2>
+                </li>
+                <li>
+                    <h2><a href="/contect">Contect us!</a></h2>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="form">
+        <form method="POST" action="/form" id="formid">
+            <div class="input">
+
+                <label for="name">Name&nbsp&nbsp&nbsp&nbsp:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text"
+                    name="name" id="name" class="inp" placeholder="enter you name..." autocomplete="off">
+                    <br>
+                    <span id="namecheck"></span>  
+                    <br><br>
+                <label for="age">Age&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</label>&nbsp&nbsp&nbsp&nbsp&nbsp<input
+                    type="text" maxlength="2" name="age" id="age" class="inp" placeholder="age..." autocomplete="off">
+                    <br>
+                    <span id="agecheck"></span>  
+
+                    <br><br>
+                <label for="phone">Phone&nbsp&nbsp&nbsp&nbsp&nbsp:</label>&nbsp&nbsp&nbsp&nbsp&nbsp<input
+                    type="text" name="phone" id="phone" class="inp" maxlength="10" placeholder="phone..." autocomplete="off">
+                    <br>
+                    <span id="phonecheck"></span>  
+                    
+                    <br><br>
+                <label for="email">Email&nbsp&nbsp&nbsp&nbsp:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="email"
+                    name="email" id="email"  class="inp" placeholder="enter your email..." autocomplete="off">
+                    <br>
+                    <span id="emailcheck"></span>  
+
+                    <br><br>
+                <div style="text-align: left" id="book1">
+                    <h2>Book Details</h2>
+                </div><br>
+                <label for="title">Title&nbsp&nbsp&nbsp&nbsp:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text"
+                    name="title" id="title" class="inp" placeholder="book title..." autocomplete="off">
+                    <br>
+                    <span id="titlecheck"></span>  
+                    <br><br>
+                <label for="page">Page&nbsp&nbsp&nbsp&nbsp:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text"
+                    name="page" id="page" class="inp" placeholder="book page..." autocomplete="off">
+                    <br>
+                    <span id="pagecheck"></span>  
+                    
+                    <br><br><br><br>
+                <button type="submit" id="buttonid" >submit</button><br><br>
+
+            </div>
+    </div>
+    </form>
+    </div>
+
+    <script src="/stuff/validate.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../stuff/style.css">
+    <script src="jquery-ui.min.js"></script>
+</head>
+<body>
+    <% include partial/nav.ejs %>
+
+    <div class="form">
+        <form action="/form" method="POST">
+            <div class="input">
+                
+                <label for="name">Name:</label><input type="text" name="name" id="name" placeholder="enter you name..." required><br>
+                <label for="age">Age:</label><input type="text" name="age" id="" placeholder="age..." required><br>
+                <label for="phone">Phone:</label><input type="tel" pattern="[0-9]{10}" name="phone" id="" placeholder="phone..." required><br>
+                <label for="emial">Email:</label><input type="email" pattern="^[a-z0-9._]+@[0-9a-z.]+\.[a-z]{2,3}$" name="email" id="" placeholder="email..." required><br>
+                <label for="book">Book Details</label>
+                <br>   <label for="title">Title:</label><input type="text" name="book_title" id="" placeholder="book title..." required><br>
+                <label for="page">Page:</label><input type="text" name="page" id="" placeholder="book page..." required><br>
+                <button type="submit" id="submit" >submit</button>
+
+            </div>
+
+            <script src="../stuff/check.js"></script>
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html> -->

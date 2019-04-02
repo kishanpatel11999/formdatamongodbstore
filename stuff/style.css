@@ -1,0 +1,80 @@
+#book1 {
+    margin-left: 30%;
+}
+
+#book {
+    margin-left: 29%;
+}
+
+body {
+    background-color: bisque;
+    text-align: center;
+}
+
+nav {
+    padding: 15px;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+li {
+    margin: 0 10px;
+    float: left;
+    list-style: none;
+}
+
+h1 {
+    font-size: 3em;
+    padding: 5% 0;
+    margin: 0 10%;
+    letter-spacing: 0.4em;
+    line-height: 2em;
+}
+
+.form {
+    margin-top: 60px;
+    padding: 1px;
+}
+
+.input {
+    background-color: bisque;
+}
+
+.inp {
+    background-color: lightcyan;
+    border-radius: 5%;
+    font-size: 20px;
+    padding: 1%;
+    border-color: aqua;
+    width: 30%;
+}
+
+button {
+    margin-left: 7%;
+    padding: 15px 65px;
+
+    background-color: aquamarine;
+    font-size: 20px;
+
+
+}
+
+button:hover {
+    background-color: lightseagreen;
+    color: yellow;
+    font-size: 20px;
+
+}
+
+
+label {
+    font-size: 25px;
+}
+
+.focused{
+    border: 2px solid red;
+}
