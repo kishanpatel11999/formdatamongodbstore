@@ -6,13 +6,6 @@ const app = express();
 var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-// //mongoose connect to db
-// const mongoose = require('mongoose')
-// //mongoose global promise
-// mongoose.Promise = global.Promise;
-// //connect to mongodb
-// // mongoose.connect("mongodb://loaclhost:27017/book")
-// mongoose.connect("mongodb://localhost:27017/book");
 
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
@@ -30,21 +23,8 @@ mongoose.connection.once('open',function(){
     // console.log('some error db not connected')
 })
 
-// //book schema title and pages
-// var bookSchema = new mongoose.Schema({
-//     title:String,
-//     pages:Number
-// })
 
 
-// //schema
-// var authorSchema = new mongoose.Schema({
-//     name:String,
-//     age:Number,
-//     book:[bookSchema]
-// })
-
-// var bookData = mongoose.model('bookcollectios',authorSchema)
 
 //template engine ejs and static data
 app.set('view engine','ejs')
